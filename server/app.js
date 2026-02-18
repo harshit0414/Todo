@@ -17,7 +17,9 @@ app.use(express.json());
 app.use(bobyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173', 
+    "https://beamish-frangollo-af50ea.netlify.app"],
+
   credentials: true,
 }));
 
