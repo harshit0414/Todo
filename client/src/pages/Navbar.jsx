@@ -9,7 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const logoutHandler = async() => {
     try {
-      const response = await axios.get('http://localhost:3000/api/v1/users/logout', {
+      const response = await axios.get('https://todo-tan-ten-20.vercel.app/api/v1/users/logout', {
         withCredentials: true,
         
       });
