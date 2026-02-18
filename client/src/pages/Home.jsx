@@ -15,7 +15,7 @@ const Home = () => {
 
     const addTodoHandler = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/api/v1/todos',
+            const response = await axios.post('https://todo-tan-ten-20.vercel.app/api/v1/todos',
                 { title, description }, {
                 headers: {
                     'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ const Home = () => {
     useEffect(() => {
         const fetchTodos = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/v1/todos', {
+                const response = await axios.get('https://todo-tan-ten-20.vercel.app/api/v1/todos', {
                     withCredentials: true,
                 });
                 if (response.data.success) {
